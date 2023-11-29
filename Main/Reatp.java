@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
             if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                 startLocationUpdates();
             } else {
-                Toast.makeText(this, "Konum izni reddedildi.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Location permission denied.", Toast.LENGTH_SHORT).show();
             }
         }
     }
